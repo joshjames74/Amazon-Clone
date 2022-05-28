@@ -1,0 +1,86 @@
+16/03/2022:
+Issues:
+- Error with checkboxfilter when importing into sidebar. May be an importing issue.
+To do:
+- Set up account functionality using Auth0
+
+ 17/03/2022
+ Completed:
+ - Set up Auth0 account and created login button
+ Issues:
+ - Issue with /api/auth/login route. Possibly related to callback url. Might need a trusted certificate
+
+20/03/2022
+Issues:
+- /api/auth/me route not working. Once logged in, seems to work fine
+- Warning raises with setting props in state of product card
+To do:
+- Set up user database
+    - Create new database
+    - Create script to check if a user already has an account
+    - If not, create a new document and add relevant information
+- Resolve product card issue.
+Completed:
+- Resolved product card issue by referring to props directly instead of adding to state
+- Written functions to check if a user already has an account (incomplete)
+- Discovered that the /api/auth/me issue related to an issue wih the useUser hook. The user property of user is undefined even when logged in. Next: either sort out user property or find other means of checking if a user is logged in
+
+21/03/2022
+To do:
+- Completed check if user is logged in:
+    - Sort out useUser issue
+    - Clean up callbacks in newUser.js
+- Set action for when a user is new:
+    - Create document in MongoDB
+    - Welcome page/preferences
+Completed:
+- Set up cypress
+
+24/03/2022
+Completed:
+- useUser issue
+- Complete function to add a new user
+Issues:
+- Two documents of a single new user are added
+To do:
+- Add profile page
+- Add seller functionality
+- Allow sellers to add products
+- Protect API routes
+
+25/03/2022
+Issues:
+- useRouter not working, or other hooks for that matter
+- Issue with useRouter is because no reponse is being sent at all
+
+25/05/2022
+Completed:
+- Solved how to protect api routes
+- Create function to get data of current user
+- Display profile picture
+- Created profile page
+- Began creating product page
+To do:
+- Create user profile
+- Create basket functionality
+Issues:
+- Function that gets the data of current user is called repeatedly
+- Downloaded redis but having issues importing
+- Annoying issue on minMaxFilter: max box appears to have margin
+
+
+General to do:
+- Allow users to have seller account
+- Create, deleted, update products
+- Add basket functionaity using cooking for seperate tabs
+- Pages:
+    - seller
+    - product
+    - basket
+    - checkout
+    - search
+    - account
+    - login
+- Caching
+- Write tests for apis
+- Ensure APIs are RESTful

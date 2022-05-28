@@ -1,0 +1,15 @@
+[
+    {
+        "name": "iPhone 7",
+        "seller": "Apple",
+        "price": "£700",
+        "review_count": "13400",
+        "review_stars": "4.5",
+        "images": [
+            {
+                "url": "https://www.backmarket.co.uk/cdn-cgi/image/format=auto,quality=75,width=750/https://d1eh9yux7w8iql.cloudfront.net/product_images/418121_cdf09ace-c61b-4fbc-897d-061870ca64f4.jpg",
+                "alt": "iphone 7 black"
+            }
+        ]
+    }
+]
