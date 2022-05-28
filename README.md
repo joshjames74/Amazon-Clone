@@ -16,3 +16,6 @@ Database:
 - MongoDB
 Authentication:
 - Auth0
+
+## To do
+Need to refactor code to fit MVC architecture pattern. Currently, views are making their own independent API requests. A controller is needed to request data from API to pass into the views.  
